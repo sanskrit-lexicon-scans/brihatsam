@@ -11,22 +11,51 @@
     Bṛhatsam̃hitā of Varāhamihira, KERN, 1865
   </span>
 </div>
+<div id="main" style="font-size:18px;">
 <p>app1 takes 2 numerical parameters (adhyāya,verse) and displays the
   pdf page containing this reference.
   <!--
   <br/>Example: <span style="font-size:12px; color:gray;">brihatsam/app1/?11,1</span> displays the pdf page whose internal page number is 69.
   -->
-  <br/>Example link:
+  <br/>Example link: <span style="font-size:16px; color:gray;">https://sanskrit-lexicon-scans.github.io/brihatsam/app1/?11,1</span>
+  <a href="https://sanskrit-lexicon-scans.github.io/brihatsam/app1/?11,1" target="_blank">click me!</a>
+  <br/>
+  This link displays the pdf page whose internal page number is 69.  On this page, we find the first verse of adhyāya 11.
   <br/> The adhyāya can range between 1 and 107.
-  <br/> For a given adhyāya, the verse ranges from 1 to some value depending on the adhyāya.
+  <br/> For a given adhyāya, the verses ranges from 1 to some value depending on the adhyāya.
 </p>
 <p>
-  This app1 is designed to serve as a link target for references to Bṛhatsam̃hitā that appear in the text of certain dictionaries at the <a href="https://sanskrit-lexicon.uni-koeln.de/">Cologne Digital Sanskrit Lexicon</a>.
 
-  <br/>
+  app1 is designed to serve as a link target for references to Bṛhatsam̃hitā that appear in the text of certain dictionaries at the <a href="https://sanskrit-lexicon.uni-koeln.de/">Cologne Digital Sanskrit Lexicon</a>.
+  Notably, the PWG dictionary (Böhtlingk and Roth Grosses Petersburger Wörterbuch) has several thousand such references, and the Cologne displays generate links to app1.
+  <br/>For instance, under the headword gArgIya (गार्गीय) in PWG there is the reference <span style="font-size:16px; color:gray;">VARĀH. BṚH. S. 11,1.</span> and the displays generate a hyperlink as in the example above.
+  
 </p>
-<p>Under construction</p>
+<p>
+  <span style="color:red">caveat</span>
+  <br/>
+  It is known that certain hyperlinks for a particular headword are not 'right',
+  in the sense that the headword is not found on the associated app1 page.
+  In the case of PWG, these 'wrong' links typically occur on headwords in the first 4 volumes of PWG; fortunately, some links from headwords in volumes 1-4 are 'right'.
+  <br/>
+  Example 1: चैत्यतरु (cEtyataru) in vol. 2 of PWG refers to "VARĀH. BṚH. S. 32,21."
+  The link <a href="http://localhost/sanskrit-lexicon-scans/brihatsam/app1/?32,25" target="_blank">32,21</a> does not mention चैत्यतरु.
+  <br/>
+  Example 2: जय (jaya) in vol. 3 of PWG refers to "VARĀH. BṚH. S. 27,14".
+  But in our Kern edition, the 27th adhyāya has only verses 1-8. In this
+  instance, app1 will show the default first page of Bṛhatsam̃hitā.
+
+
+</p>
+<p>
+  This discrepancy is related to the publication date of this edition of Bṛhatsam̃hitā (1865) and the publication dates 1855-1865 of volumes 1-4 of PWG. 
+  <br/>
+  The inference we make is that the 'wrong' references in PWG are based on another pdf than the 1865 version edited by Kern. We have been unable to find a pdf of this missing reference.
+</p>
+</div>
+
 <!--
+<p>Under construction</p>
 <p>Scanned images courtesy of Bayerische StaatsBibliothek (<a href="https://opacplus.bsb-muenchen.de/title/BV012357417">Reference</a>).<br> For non-commercial use only.
 </p>
 <p><a href="pdfpages/Bayer_chr2 8.pdf">Foreword</a></p>
