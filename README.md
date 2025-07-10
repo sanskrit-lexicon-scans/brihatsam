@@ -3,12 +3,12 @@
 
 Ref: https://github.com/sanskrit-lexicon/PWG/issues/92
 
-PDF source: Google Books (exact url unknown)
+PDF source:  https://www.digitale-sammlungen.de/en/view/bsb10248699
 
-Title:
-- Biblioteca Indica; Collection of Oriental Works
-- The Asiatic Society of Bengal
-- The Brhat saNhita of varaha-mihira
+    license: https://rightsstatements.org/page/NoC-NC/1.0/
+
+
+Title: The Brhat sañhitá of Varáha-Mihira
 - edited by Dr. H. Kern
 - Calcutta, 1865.
 
