@@ -17,3 +17,10 @@ Provides access to pages based on 2 numbers: (adhyāya 1-107,verse)
 
 Example: https://sanskrit-lexicon-scans.github.io/brihatsam/app1/?1,1
 
+## app0
+Provides access to pages based on page identifier
+- preface : pref1-pref66
+  - Example: https://sanskrit-lexicon-scans.github.io/brihatsam/app0/?pref1
+- main : 1-508
+  -- Example: https://sanskrit-lexicon-scans.github.io/brihatsam/app0/?10
+

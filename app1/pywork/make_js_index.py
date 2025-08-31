@@ -96,6 +96,8 @@ Note the first line (column names) is ignored
    return
   # set self.page as integer
   self.page = int(m_page.group(1))
+  # set self.ipage as integer
+  self.ipage = int(m_ipage.group(1))
   # set self.adhy as integer
   self.adhy = int(m_adhy.group(1))
   # set self.fromv as integer
@@ -126,9 +128,10 @@ Note the first line (column names) is ignored
    'adhy':int(self.adhy),
    'v1':int(self.fromv),
    'v2':int(self.tov),
-   'x1':self.fromvx,
-   'x2':self.tovx,
-   'vp':self.vpstr
+   #'x1':self.fromvx,
+   #'x2':self.tovx,
+   'vp':self.vpstr,
+   'ipage':self.ipage,
   }
   return e
 
