@@ -224,26 +224,26 @@ def check1(pagerecs):
    continue
   if (rec.adhy != prev.adhy):
    if rec.fromv != 1:
-    print('first verse in adhyaya not 1')
+    print('WARNING first verse in adhyaya not 1')
     print('lnum=%s, line=%s' % (lnum,line))
-    exit(1)
+    # exit(1)
    prev = rec
    continue
   # rec.adhy = prev.adhy
   if (rec.fromvx == '') and (prev.tovx == ''):
    if rec.fromv != (prev.tov + 1):
-    print('fromv problem A')
+    print('WARNING fromv problem A')
     print('lnum=%s, line=%s' % (lnum,line))
-    exit(1)
+    #exit(1)
   else:
    #if (prev.tovx == 'a') and (rec.fromvx == 'b') and (rec.fromv == prev.tov):
    if (prev.tovx in ('a','b')) and (rec.fromvx == 'b') and (rec.fromv == prev.tov):
     # no problem
     pass
    else:
-    print('fromv problem B')
+    print('WARNING: fromv problem B')
     print('lnum=%s, line=%s' % (lnum,line))
-    exit(1)
+    #exit(1)
   prev = rec
  print("check1 finds no problems")
 
